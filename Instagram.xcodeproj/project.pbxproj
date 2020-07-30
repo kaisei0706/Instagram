@@ -3,14 +3,13 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		0E40DFFF10C5782E42FC7E55 /* Pods_Instagram.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EBD5B426463FDE417984A936 /* Pods_Instagram.framework */; };
 		A389742624CF196500B1226F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A389742524CF196500B1226F /* AppDelegate.swift */; };
 		A389742824CF196500B1226F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A389742724CF196500B1226F /* SceneDelegate.swift */; };
-		A389742A24CF196500B1226F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A389742924CF196500B1226F /* ViewController.swift */; };
 		A389742D24CF196500B1226F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A389742B24CF196500B1226F /* Main.storyboard */; };
 		A389742F24CF196900B1226F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A389742E24CF196900B1226F /* Assets.xcassets */; };
 		A389743224CF196900B1226F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A389743024CF196900B1226F /* LaunchScreen.storyboard */; };
@@ -19,6 +18,8 @@
 		A389743E24CF1B1A00B1226F /* ImageSelectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A389743D24CF1B1A00B1226F /* ImageSelectViewController.swift */; };
 		A389744024CF1B2F00B1226F /* PostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A389743F24CF1B2F00B1226F /* PostViewController.swift */; };
 		A389744224CF1B4200B1226F /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A389744124CF1B4200B1226F /* SettingViewController.swift */; };
+		A389744424D0F68100B1226F /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A389744324D0F68100B1226F /* TabBarController.swift */; };
+		A389744624D1578E00B1226F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A389744524D1578E00B1226F /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,7 +28,6 @@
 		A389742224CF196500B1226F /* Instagram.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Instagram.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A389742524CF196500B1226F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A389742724CF196500B1226F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		A389742924CF196500B1226F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		A389742C24CF196500B1226F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A389742E24CF196900B1226F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A389743124CF196900B1226F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -37,6 +37,8 @@
 		A389743D24CF1B1A00B1226F /* ImageSelectViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageSelectViewController.swift; sourceTree = "<group>"; };
 		A389743F24CF1B2F00B1226F /* PostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostViewController.swift; sourceTree = "<group>"; };
 		A389744124CF1B4200B1226F /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
+		A389744324D0F68100B1226F /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		A389744524D1578E00B1226F /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		EBD5B426463FDE417984A936 /* Pods_Instagram.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Instagram.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -75,13 +77,14 @@
 			children = (
 				A389742524CF196500B1226F /* AppDelegate.swift */,
 				A389742724CF196500B1226F /* SceneDelegate.swift */,
-				A389742924CF196500B1226F /* ViewController.swift */,
 				A389743924CF1AE400B1226F /* LoginViewController.swift */,
 				A389743B24CF1B0600B1226F /* HomeViewController.swift */,
 				A389743D24CF1B1A00B1226F /* ImageSelectViewController.swift */,
 				A389743F24CF1B2F00B1226F /* PostViewController.swift */,
 				A389744124CF1B4200B1226F /* SettingViewController.swift */,
+				A389744324D0F68100B1226F /* TabBarController.swift */,
 				A389742B24CF196500B1226F /* Main.storyboard */,
+				A389744524D1578E00B1226F /* GoogleService-Info.plist */,
 				A389742E24CF196900B1226F /* Assets.xcassets */,
 				A389743024CF196900B1226F /* LaunchScreen.storyboard */,
 				A389743324CF196900B1226F /* Info.plist */,
@@ -103,7 +106,6 @@
 				217FBCFC80A6AFD5E4E889C7 /* Pods-Instagram.debug.xcconfig */,
 				19C7155A72662427BE00C2AF /* Pods-Instagram.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -168,6 +170,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A389743224CF196900B1226F /* LaunchScreen.storyboard in Resources */,
+				A389744624D1578E00B1226F /* GoogleService-Info.plist in Resources */,
 				A389742F24CF196900B1226F /* Assets.xcassets in Resources */,
 				A389742D24CF196500B1226F /* Main.storyboard in Resources */,
 			);
@@ -223,11 +226,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				A389743E24CF1B1A00B1226F /* ImageSelectViewController.swift in Sources */,
+				A389744424D0F68100B1226F /* TabBarController.swift in Sources */,
 				A389743C24CF1B0600B1226F /* HomeViewController.swift in Sources */,
 				A389744024CF1B2F00B1226F /* PostViewController.swift in Sources */,
 				A389744224CF1B4200B1226F /* SettingViewController.swift in Sources */,
 				A389743A24CF1AE400B1226F /* LoginViewController.swift in Sources */,
-				A389742A24CF196500B1226F /* ViewController.swift in Sources */,
 				A389742624CF196500B1226F /* AppDelegate.swift in Sources */,
 				A389742824CF196500B1226F /* SceneDelegate.swift in Sources */,
 			);
