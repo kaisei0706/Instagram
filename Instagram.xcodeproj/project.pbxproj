@@ -20,6 +20,11 @@
 		A389744224CF1B4200B1226F /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A389744124CF1B4200B1226F /* SettingViewController.swift */; };
 		A389744424D0F68100B1226F /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A389744324D0F68100B1226F /* TabBarController.swift */; };
 		A389744624D1578E00B1226F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A389744524D1578E00B1226F /* GoogleService-Info.plist */; };
+		A3DDBD6424D51051008DF1FC /* Const.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3DDBD6324D51051008DF1FC /* Const.swift */; };
+		A3DDBD6624D53015008DF1FC /* PostData.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3DDBD6524D53015008DF1FC /* PostData.swift */; };
+		A3DDBD6924D53116008DF1FC /* PostTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3DDBD6724D53116008DF1FC /* PostTableViewCell.swift */; };
+		A3DDBD6A24D53116008DF1FC /* PostTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A3DDBD6824D53116008DF1FC /* PostTableViewCell.xib */; };
+		A3DDBD7624DE8110008DF1FC /* NewCommentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3DDBD7524DE8110008DF1FC /* NewCommentViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +44,11 @@
 		A389744124CF1B4200B1226F /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
 		A389744324D0F68100B1226F /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 		A389744524D1578E00B1226F /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		A3DDBD6324D51051008DF1FC /* Const.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Const.swift; sourceTree = "<group>"; };
+		A3DDBD6524D53015008DF1FC /* PostData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostData.swift; sourceTree = "<group>"; };
+		A3DDBD6724D53116008DF1FC /* PostTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostTableViewCell.swift; sourceTree = "<group>"; };
+		A3DDBD6824D53116008DF1FC /* PostTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PostTableViewCell.xib; sourceTree = "<group>"; };
+		A3DDBD7524DE8110008DF1FC /* NewCommentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewCommentViewController.swift; sourceTree = "<group>"; };
 		EBD5B426463FDE417984A936 /* Pods_Instagram.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Instagram.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -83,6 +93,11 @@
 				A389743F24CF1B2F00B1226F /* PostViewController.swift */,
 				A389744124CF1B4200B1226F /* SettingViewController.swift */,
 				A389744324D0F68100B1226F /* TabBarController.swift */,
+				A3DDBD6324D51051008DF1FC /* Const.swift */,
+				A3DDBD6524D53015008DF1FC /* PostData.swift */,
+				A3DDBD6724D53116008DF1FC /* PostTableViewCell.swift */,
+				A3DDBD6824D53116008DF1FC /* PostTableViewCell.xib */,
+				A3DDBD7524DE8110008DF1FC /* NewCommentViewController.swift */,
 				A389742B24CF196500B1226F /* Main.storyboard */,
 				A389744524D1578E00B1226F /* GoogleService-Info.plist */,
 				A389742E24CF196900B1226F /* Assets.xcassets */,
@@ -170,6 +185,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A389743224CF196900B1226F /* LaunchScreen.storyboard in Resources */,
+				A3DDBD6A24D53116008DF1FC /* PostTableViewCell.xib in Resources */,
 				A389744624D1578E00B1226F /* GoogleService-Info.plist in Resources */,
 				A389742F24CF196900B1226F /* Assets.xcassets in Resources */,
 				A389742D24CF196500B1226F /* Main.storyboard in Resources */,
@@ -225,14 +241,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A3DDBD6924D53116008DF1FC /* PostTableViewCell.swift in Sources */,
 				A389743E24CF1B1A00B1226F /* ImageSelectViewController.swift in Sources */,
 				A389744424D0F68100B1226F /* TabBarController.swift in Sources */,
 				A389743C24CF1B0600B1226F /* HomeViewController.swift in Sources */,
 				A389744024CF1B2F00B1226F /* PostViewController.swift in Sources */,
+				A3DDBD7624DE8110008DF1FC /* NewCommentViewController.swift in Sources */,
 				A389744224CF1B4200B1226F /* SettingViewController.swift in Sources */,
+				A3DDBD6624D53015008DF1FC /* PostData.swift in Sources */,
 				A389743A24CF1AE400B1226F /* LoginViewController.swift in Sources */,
 				A389742624CF196500B1226F /* AppDelegate.swift in Sources */,
 				A389742824CF196500B1226F /* SceneDelegate.swift in Sources */,
+				A3DDBD6424D51051008DF1FC /* Const.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
