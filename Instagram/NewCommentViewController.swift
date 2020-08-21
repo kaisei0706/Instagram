@@ -7,8 +7,8 @@
 //
 
 import UIKit
-import FirebaseUI
-
+import FirebaseAuth
+import SVProgressHUD
 
 class NewCommentViewController: UIViewController {
     
@@ -16,7 +16,7 @@ class NewCommentViewController: UIViewController {
     @IBOutlet weak var commentText: UITextView!
     @IBOutlet weak var navigationbar: UINavigationItem!
     
-    
+    var postdata:String = ""
     
 
     override func viewDidLoad() {
@@ -24,22 +24,39 @@ class NewCommentViewController: UIViewController {
         
         commentText.text = ""
         commentText.becomeFirstResponder()
-        setPostData(<#T##postData: PostData##PostData#>)
+        let user = Auth.auth().currentUser
+        if let user = user {
+            usernameLabel.text = user.displayName
+        }
         
         // Do any additional setup after loading the view.
     }
     
-    func setPostData(_ postData: PostData) {
-        self.usernameLabel.text = "\(postData.name!)"
-    }
         
     
     @IBAction func backButton(_ sender: Any) {
         dismiss(animated: true, completion: nil)
     }
     
-    @IBAction func commentButtonClicked(_ sender: Any) {
+    @IBAction func commentButtonClicked(_ sender: Any, forEvent event: UIEvent) {
+        print("DEBUG_PRINT: commentボタンがタップされました。")
+        
+        if let comment = commentText.text{
+            if comment.isEmpty{
+                SVProgressHUD.showError(withStatus: "コメントを入力して下さい")
+                return
+            }
+            
+        }
+        
         dismiss(animated: true, completion: nil)
+    }
+    
+    let newcomment = postdata
+    
+    
+        
+        
     }
     
         
@@ -55,6 +72,4 @@ class NewCommentViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
-
-}
 
