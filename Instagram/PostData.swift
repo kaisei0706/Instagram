@@ -40,5 +40,7 @@ class PostData: NSObject {
                 self.isLiked = true
             }
         }
+        
+        self.comments = postDic["comments"] as? String
     }
 }

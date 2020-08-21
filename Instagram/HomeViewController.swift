@@ -124,8 +124,6 @@ class HomeViewController: UIViewController, UITableViewDataSource, UITableViewDe
         
         // 配列からタップされたインデックスのデータを取り出す
         let postData = postArray[indexPath!.row]
-        
-        let newCommentViewController:NewCommentViewController = segue.destination as! NewCommentViewController
 
         performSegue(withIdentifier: "NewCommentsegue",sender: nil)
         
@@ -136,8 +134,8 @@ class HomeViewController: UIViewController, UITableViewDataSource, UITableViewDe
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         
         let newCommentViewController:NewCommentViewController = segue.destination as! NewCommentViewController
-        // 遷移先のResultViewControllerで宣言しているx, yに値を代入して渡す
-        NewcommentViewController.postdata = ""
+        
+        newCommentViewController.postdata = self.postArray
     }
     
     

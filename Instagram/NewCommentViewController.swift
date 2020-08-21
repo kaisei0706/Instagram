@@ -16,7 +16,7 @@ class NewCommentViewController: UIViewController {
     @IBOutlet weak var commentText: UITextView!
     @IBOutlet weak var navigationbar: UINavigationItem!
     
-    var postdata:String = ""
+    var postdata: String = ""
     
 
     override func viewDidLoad() {
@@ -28,6 +28,8 @@ class NewCommentViewController: UIViewController {
         if let user = user {
             usernameLabel.text = user.displayName
         }
+        
+        let newcomment = postdata
         
         // Do any additional setup after loading the view.
     }
@@ -52,7 +54,7 @@ class NewCommentViewController: UIViewController {
         dismiss(animated: true, completion: nil)
     }
     
-    let newcomment = postdata
+    
     
     
         
