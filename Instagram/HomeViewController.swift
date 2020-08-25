@@ -8,6 +8,8 @@
 
 import UIKit
 import Firebase
+import SVProgressHUD
+
 
 class HomeViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     @IBOutlet weak var tableView: UITableView!
@@ -17,6 +19,8 @@ class HomeViewController: UIViewController, UITableViewDataSource, UITableViewDe
     
     // Firestoreのリスナー
     var listener: ListenerRegistration!
+    
+    var selectedPostData: PostData?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -129,13 +133,16 @@ class HomeViewController: UIViewController, UITableViewDataSource, UITableViewDe
         
         
         
+        
+        
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         
         let newCommentViewController:NewCommentViewController = segue.destination as! NewCommentViewController
         
-        newCommentViewController.postdata = self.postArray
+        newCommentViewController.postdata = selectedPostData
+        
     }
     
     
