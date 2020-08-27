@@ -42,8 +42,10 @@ class NewCommentViewController: UIViewController {
     }
     
     
+    
     @IBAction func commentButtonClicked(_ sender: Any) {
         print("DEBUG_PRINT: commentボタンがタップされました。")
+        
         
         var updateComment: FieldValue
         if let comments = commentText.text{
@@ -53,10 +55,9 @@ class NewCommentViewController: UIViewController {
             
             }else{
             updateComment = FieldValue.arrayUnion([comments])
-            let postDic = [
-            "comments": self.commentText.text!
-            ] as [String : Any]
             }
+            let postRef = Firestore.firestore().collection(Const.PostPath).document(postdata!.id)
+            postRef.updateData(["comments": updateComment])
             
         }
         

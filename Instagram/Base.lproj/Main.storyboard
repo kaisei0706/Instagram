@@ -66,7 +66,7 @@
                                         </barButtonItem>
                                         <barButtonItem key="rightBarButtonItem" title=" comment" id="LXi-XU-llU">
                                             <connections>
-                                                <action selector="commentButtonClicked:" destination="IcX-Ap-bgD" id="UBo-VN-f5M"/>
+                                                <action selector="commentButtonClicked:" destination="IcX-Ap-bgD" id="vSf-xY-mIA"/>
                                             </connections>
                                         </barButtonItem>
                                     </navigationItem>
