@@ -41,7 +41,8 @@ class PostData: NSObject {
             }
         }
         
-        let comments = postDic["comments"] as? String
+        self.comments = postDic["comments"] as? [String]? as! [String]
+
         
     }
     

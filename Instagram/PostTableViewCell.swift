@@ -62,17 +62,21 @@ class PostTableViewCell: UITableViewCell {
         } else {
             let buttonImage = UIImage(named: "like_none")
             self.likeButton.setImage(buttonImage, for: .normal)
-            
-       
-        
-        
         }
+        
+        // キャプションの表示
+        var commentlabel = ""
+        for comment in postData.comments {
+            commentlabel = commentlabel + "\n" + comment
+        }
+        
+        commentLabel.text = commentlabel
         
         
     }
+
         
-        
-        
-}
+
     
 
+}

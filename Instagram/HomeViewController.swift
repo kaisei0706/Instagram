@@ -128,6 +128,8 @@ class HomeViewController: UIViewController, UITableViewDataSource, UITableViewDe
         
         // 配列からタップされたインデックスのデータを取り出す
         let postData = postArray[indexPath!.row]
+        selectedPostData = postData
+        
 
         performSegue(withIdentifier: "NewCommentsegue",sender: nil)
         

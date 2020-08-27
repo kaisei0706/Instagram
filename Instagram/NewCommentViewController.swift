@@ -46,18 +46,22 @@ class NewCommentViewController: UIViewController {
     @IBAction func commentButtonClicked(_ sender: Any) {
         print("DEBUG_PRINT: commentボタンがタップされました。")
         
-        
+        var usernamelabel = usernameLabel.text
         var updateComment: FieldValue
-        if let comments = commentText.text{
+        if let comments =  commentText.text{
             if comments.isEmpty{
                 SVProgressHUD.showError(withStatus: "コメントを入力して下さい")
                 return
             
             }else{
-            updateComment = FieldValue.arrayUnion([comments])
+            
+            var newcomments = usernamelabel! + ":" + comments
+                
+            updateComment = FieldValue.arrayUnion([newcomments])
             }
             let postRef = Firestore.firestore().collection(Const.PostPath).document(postdata!.id)
             postRef.updateData(["comments": updateComment])
+            
             
         }
         
