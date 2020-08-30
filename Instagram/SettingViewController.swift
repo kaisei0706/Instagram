@@ -54,8 +54,8 @@ class SettingViewController: UIViewController {
         // ログイン画面から戻ってきた時のためにホーム画面（index = 0）を選択している状態にしておく
         tabBarController?.selectedIndex = 0
     }
-    override func viewDidLoad() {
-        super.viewDidLoad()
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
         
         // 表示名を取得してTextFieldに設定する
         let user = Auth.auth().currentUser
